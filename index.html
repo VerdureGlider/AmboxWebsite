@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+   
+
+    body {
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px); 
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); 
+      }
+    }
+  </style>
+</head>
+<main>
+  <header>
+    <div class="nav">
+      <img src="ambox logo.png" alt="" class="headImg">
+      <li class="head-nav"><a href="home.html">Dashboard</a></li>
+      <li class="head-nav"><a href="events.html">Events</a></li>
+      <li class="head-nav"><a href="news.html">News</a></li>
+      <li class="head-nav"><a href="about-us.html">About Us</a></li>
+      <li class="head-nav"><a href="index.html">Log In</a></li>
+    </div>
+  </header>
+  <body>
+    <div class="announcement">
+      Welcome to our platform! Check out our new features.
+    </div>
+    <div class="container">
+      <img src="ambox logo.png" alt="Ambox Logo" class="logo">
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <input type="text" placeholder="Username" name="username" required><br><br>
+        <input type="password" placeholder="Password" name="password" required><br><br>
+        <button type="submit" onclick="verifyCredentials()">Login</button>
+      </form>
+      <p>Don't have an account? <button class="submit-button" id="registerButton">Register</button></p>
+      <button class="submit-button" id="submitTicketButton">Submit a Ticket</button>
+    </div>
+    <div class="popup" id="registerPopup">
+      <div class="popup-content">
+        <h2>Register</h2>
+        <form action="register.php" method="post">
+          <input type="text" placeholder="Username" name="username" required><br><br>
+          <input type="password" placeholder="Password" name="password" required><br><br>
+          <input type="email" placeholder="Email" name="email" required><br><br>
+          <input type="text" placeholder="Real Name" name="realName" required><br><br>
+          <input type="date" placeholder="Birthday" name="birthday" required><br><br>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+            <option value="preferNotToSay">Prefer not to say</option>
+          </select><br><br>
+          <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <button class="submit-button" id="loginButton" onclick="registerButton">Login</button></p>
+      </div>
+    </div>
+    <div class="popup" id="submitTicketPopup">
+      <div class="popup-content">
+        <h2>Submit a Ticket</h2>
+        <button class="close-button" onclick="closeSubmitTicketPopup()">Close</button>
+        <form action="submit_ticket.php" method="post">
+          <label for="concernType">Type of Concern:</label>
+          <select id="concernType" name="concernType">
+            <option value="ticketing">TICKETING</option>
+            <option value="reportPerson">REPORT A PERSON</option>
+            <option value="others">Others</option>
+          </select><br><br>
+          <label for="ticketEmail">Email:</label>
+          <input type="email" id="ticketEmail" name="ticketEmail" required><br><br>
+          <label for="ticketDetails">Details:</label>
+          <textarea id="ticketDetails" name="ticketDetails" rows="5" required></textarea><br><br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      const registerButton = document.getElementById("registerButton");
+      const submitTicketButton = document.getElementById("submitTicketButton");
+      const loginButton = document.getElementById("loginButton");
+      const registerPopup = document.getElementById("registerPopup");
+      const submitTicketPopup = document.getElementById("submitTicketPopup");
+
+      registerButton.addEventListener("click", () => {
+        submitTicketPopup.style.display = "none";
+        registerPopup.style.display = "flex";
+      });
+
+      submitTicketButton.addEventListener

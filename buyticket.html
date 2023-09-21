@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Ticket Checkout</title>
+    <link rel="stylesheet" href="checkout-styles.css">
+</head>
+
+<body class="checkout-body">
+    <header>
+        <div class="nav">
+            <img src="ambox logo.png" alt="" class="headImg">
+            <ul>
+                <li class="head-nav"><a href="home.html">Dashboard</a></li>
+                <li class="head-nav"><a href="events.html">Events</a></li>
+                <li class="head-nav"><a href="news.html">News</a></li>
+                <li class="head-nav"><a href="about-us.html">About Us</a></li>
+                <li class="head-nav"><a href="index.html">Log In</a></li>
+            </ul>
+        </div>
+    </header>
+
+<div class="second-body">
+
+    <div class="right">
+        <div class="rtop">
+          <img src="ad1.jpg", width=200 height=300> </br>
+        </div>
+      
+        <div class="rbot">
+          <img src="ad2.png", width=200 height=300> </br>
+        </div>
+    </div>
+
+    <div class="checkout-container">
+        <div class="checkout-left">
+            <h1>Your Ticket Information</h1>
+
+            <label>Select your event</label>
+            <input list="browsers" name="event">
+            <datalist id="browsers">
+                <option value="TGK Matsuri"></option>
+                <option value="December Avenue Concert"></option>
+                <option value="Haha Cosplay"></option>
+                <option value="Mindanao Cosplay Summit"></option>
+            </datalist> <br>
+
+            <label>Ticket Variation</label>
+            <input list="variation" name="variation">
+            <datalist id="variation">
+                <option value="VVIP"></option>
+                <option value="VIP"></option>
+                <option value="GOLD"></option>
+                <option value="SILVER"></option>
+                <option value="GEN AD"></option>
+            </datalist> <br>
+
+            <label>Ticket Options</label>
+            <div class="ticket-options">
+                <label for="day1">Day 1</label>
+                <input type="checkbox" id="day1" name="ticketDay" value="Day 1">
+                <label for="day2">Day 2</label>
+                <input type="checkbox" id="day2" name="ticketDay" value="Day 2">
+                <label for="day3">Day 3</label>
+                <input type="checkbox" id="day3" name="ticketDay" value="Day 3">
+            </div>
+
+            <button class="buy-button" onclick="window.location.href = 'home.html'">Proceed to Checkout</button>
+        </div>
+
+        <div class="checkout-right">
+            <h1>Order Summary</h1>
+            <div class="order-summary">
+                <p>Event: TGK Matsuri</p>
+                <p>Ticket Variation: VVIP</p>
+                <p>Ticket Options: Day 1, Day 2</p>
+            </div>
+        </div>
+    
+
+
+</div>
+
+    <footer>
+        <h4>Copyright 2023</h4>
+        <a href="">Privacy Policy</a>
+        <a href="">About Us</a>
+    </footer>
+</body>
+</html>

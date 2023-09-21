@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listing</title>
+  <link rel="stylesheet" href="events-styles.css">
+
+  <style>
+    body {
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px); 
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); 
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-50%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    main .event {
+      animation: slideIn 0.5s forwards; 
+    }
+  </style>
+  
+  <script>
+    function redirectToBuyTicket() {
+      window.location.href = 'buyticket.html';
+    }
+  </script>
+
+
+</head>
+<body>
+
+  <header>
+    <div class="nav" >
+        <img src="ambox logo.png" alt="" class="headImg">
+        <li class="head-nav"><a href="home.html">Dashboard</a></li>
+        <li class="head-nav"><a href="events.html">Events</a></li>
+        <li class="head-nav"><a href="news.html">News</a></li>
+        <li class="head-nav"><a href="about-us.html">About Us</a></li>
+        <li class="head-nav"><a href="index.html">Log In</a></li>
+    </div>
+  </header>
+
+  <main>
+    <section class="event">
+      <h2>Music Event</h2>
+      <img src="/Posters/p1.jpg" alt="" style="width: 300px;height:400px;text-align:center;">
+      <p>October 5</p>
+      <button class="buy-button" onclick="redirectToBuyTicket()">Buy Ticket</button>
+    </section>
+
+    <section class="event">
+      <h2>Elegant Event</h2>
+      <img src="/Posters/p2.avif" alt="" style="width: 300px;height:400px;text-align:center;">
+      <p>June 31</p>
+      <button class="buy-button" onclick="redirectToBuyTicket()">Buy Ticket</button>
+    </section>
+
+    <section class="event">
+        <h2>Poppin Music Fest 2023</h2>
+        <img src="/Posters/p3.jpg" alt="" style="width: 300px;height:400px;text-align:center;">
+        <p>August 23</p>
+        <button class="buy-button" onclick="redirectToBuyTicket()">Buy Ticket</button>
+      </section>
+  
+      <section class="event">
+        <h2>Music Festival
+
+        </h2>
+        <img src="/Posters/p4.jpg" alt="" style="width: 300px;height:400px;text-align:center;">
+        <p>October 14</p>
+        <button class="buy-button" onclick="redirectToBuyTicket()">Buy Ticket</button>
+      </section>
+
+      <section class="event">
+        <h2>Rock 'n' Roll Your Place</h2>
+        <img src="/Posters/p5.jpg" alt="" style="width: 300px;height:400px;text-align:center;">
+        <p>October 18</p>
+        <button class="buy-button" onclick="redirectToBuyTicket()">Buy Ticket</button>
+      </section>
+  
+      <section class="event">
+        <h2>Music Festival</h2>
+        <img src="/Posters/p6.jpg" alt="" style="width: 300px;height:400px;text-align:center;margin: auto;">
+        <p>June 7</p>
+        <button class="buy-button" onclick="redirectToBuyTicket()">Buy Ticket</button>
+      </section>
+
+
+  </main>
+
+  <footer>
+    <h4>Copyright 2023</h4>
+    <a href="" class="foot">Privacy Policy</a>
+    <a href="" class="foot">About Us</a>
+    </footer>
+
+</body>
+</html>

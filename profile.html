@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .profile-picture img {
+            max-width: 300px;
+            max-height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+        }
+        body {
+          background-color: lightblue;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px); 
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); 
+      }
+    }
+    </style>
+</head>
+
+<header>
+  <div class="nav">
+    <img src="ambox logo.png" alt="" class="headImg">
+    <li class="head-nav"><a href="home.html">Dashboard</a></li>
+    <li class="head-nav"><a href="events.html">Events</a></li>
+    <li class="head-nav"><a href="news.html">News</a></li>
+    <li class="head-nav"><a href="about-us.html">About Us</a></li>
+    <li class="head-nav"><a href="index.html">Log In</a></li>
+  </div>
+</header>
+
+<div class="m">
+    <div class="left">
+        <div class="rtop">
+          <img src="ad1.jpg" width="200" height="300">
+        </div>
+        <div class="rbot1">
+          <img src="ad2.png" width="200" height="200"> 
+        </div>
+    </div>
+
+    <div class="profile-main">
+        <br><br><br>
+        <h1>Edit Profile</h1>
+
+        <h5>First Name</h5>
+        <input type="text" id="fname" class="input">
+        <h5>Last Name</h5>
+        <input type="text" id="lname" class="input">
+        <h5>Email</h5>
+        <input type="text" id="email" class="input">
+        <h5>Username</h5>
+        <input type="text" id="uname" class="input">
+        <h5>Password</h5>
+        <input type="password" id="pwd" class="input">
+        <h5>Birthday</h5>
+        <input type="Date" name="" id="Birthday"> <br>
+        <h5>Gender</h5>
+        <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="preferNotToSay">Prefer not to say</option>
+            </select><br><br>
+        <button class="profile-button">Edit</button> <br>
+        <button class="profile-button" onclick="window.location.href = 'home.html'">Submit</button>
+
+
+    </div>
+
+    <br> <br>
+    <br> <br>
+    <br> <br>
+
+    <div class="profile-picture-holder">
+      <h5>Profile Picture</h5>
+      <div class="profile-picture">
+          <input type="file" accept="image/*" id="profileImage" onchange="displayProfileImage(event)">
+          <img id="displayProfileImage" src="placeholder.jpg" alt="Placeholder Image" />
+      </div>
+  </div>
+  
+
+<footer>
+    <h4>Copyright 2023</h4>
+    <a href="" class="footer-text">Privacy Policy</a>
+    <a href="" class="footer-text">About Us</a>
+</footer>
+
+<script>
+    function displayProfileImage(event) {
+        var image = document.getElementById('displayProfileImage');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    }
+</script>
+
+</html>

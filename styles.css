@@ -1,0 +1,305 @@
+
+body, h1, h2, h3, h4, h5, h6, p, form, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  flex-direction: row;
+  color: white;
+  text-decoration: none;
+}
+
+div.nav {
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background-color: #553d67;
+  font-size: 14px;
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  color: white !important;
+}
+
+.head-nav {
+  margin-left: 20px;
+  color: white !important;
+}
+
+img.headImg {
+  height: 30px;
+  margin-top: 0;
+  margin-left: 15%;
+  float: left;
+}
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: fadeIn 1.5s ease-out;
+    font-family: Arial, sans-serif; /* Change font-family */
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+
+
+  body {
+    color: #333;
+  }
+  
+  .container {
+    background-color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #f64c72;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+
+  div.right{
+    width: 30%;
+    height: 100%;
+  }
+
+  div.rtop{
+    height: 50%;
+    margin-top: 40%;
+  }
+  
+  div.rbot{
+    height: 50%
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100vw;
+    font-size: 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  footer * {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    flex-direction: row;
+  }
+  footer-text{
+    color: white;
+  }
+
+  .profilePicture{
+    width: 300px;
+    margin-right: 5px;
+   
+  }
+
+  .profile-main{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-left: 10%;
+  }
+
+  .input{
+    max-width: 200px;
+    font-size: 20;
+    background-color: black;
+  }
+
+.profile-button{
+  max-width: 300px;
+  width: 300px;
+}
+
+div.m{
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 100%;
+  padding-right: 30%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: 0;
+  display: flex;
+  background-color: lightblue;
+  align-items: center;
+}
+  
+.left{
+  float: left;
+  margin-left: 5%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.rbot1{
+  margin-top: 0;
+  padding-top: 0;
+
+}
+
+.announcement {
+  background-color: #242582;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  background-color: #553d67;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #99738e;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.popup-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #553d67;
+}
+
+.popup-content select,
+.popup-content input[type="email"],
+.popup-content textarea,
+.popup-content input[type="text"],
+.popup-content input[type="password"],
+.popup-content input[type="date"],
+.popup-content input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.profile-picture img {
+  max-width: 300px;
+  max-height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.profile-picture-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container{
+  max-width: 60%;
+  margin-left: 15%;
+}
+
+.news-content{
+  text-align: justify;
+  font-size: 20px;
+}

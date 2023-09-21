@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f64c72;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .dashboard {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        h1 {
+            color: #553d67;
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .ticket-request {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .ticket-request span {
+            margin-bottom: 10px;
+        }
+
+        .ticket-request button {
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .approve {
+            background-color: #42b72a;
+            color: white;
+            width: 100px;
+            margin: 0;
+        }
+
+        .deny {
+            background-color: #ff3c2f;
+            color: white;
+            width: 100px;
+            margin: 0;
+        }
+
+        .complaint-feed {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .complaint-feed span {
+            margin-bottom: 10px;
+        }
+
+        .complaint-feed button {
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .resolve {
+            background-color: #42b72a;
+            color: white;
+            width: 100px;
+            margin: 0;
+        }
+
+        .reject {
+            background-color: #ff3c2f;
+            color: white;
+            width: 100px;
+            margin: 0;
+        }
+        body{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<header>
+    <div class="nav" >
+      <img src="ambox logo.png" alt="" class="headImg">
+      <li class="head-nav"><a href="home.html">Dashboard</a></li>
+      <li class="head-nav"><a href="events.html">Events</a></li>
+      <li class="head-nav"><a href="news.html">News</a></li>
+      <li class="head-nav"><a href="about-us.html">About Us</a></li>
+      <li class="head-nav"><a href="index.html">Log In</a></li>
+  </div>
+    </header>
+
+<body>
+    <div class="dashboard">
+        <h1>Ticket Purchase Requests</h1>
+
+        <div class="ticket-request">
+            <span>User: John Doe</span>
+            <span>Event: TGK Matsuri</span>
+            <span>MOP: GCASH</span>
+            <span>Ref #: 1230819024</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Jane Smith</span>
+            <span>Event: Concert XYZ</span>
+            <span>MOP: PayPal</span>
+            <span>Ref #: 987654321</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Mark Johnson</span>
+            <span>Event: Festival ABC</span>
+            <span>MOP: Credit Card</span>
+            <span>Ref #: 555666777</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Tristan Shawn</span>
+            <span>Event: Festival ABC</span>
+            <span>MOP: Credit Card</span>
+            <span>Ref #: 555666777</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+        <div class="ticket-request">
+            <span>User: John Doe</span>
+            <span>Event: TGK Matsuri</span>
+            <span>MOP: GCASH</span>
+            <span>Ref #: 1230819024</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Jane Smith</span>
+            <span>Event: Concert XYZ</span>
+            <span>MOP: PayPal</span>
+            <span>Ref #: 987654321</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Mark Johnson</span>
+            <span>Event: Festival ABC</span>
+            <span>MOP: Credit Card</span>
+            <span>Ref #: 555666777</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Tristan Shawn</span>
+            <span>Event: Festival ABC</span>
+            <span>MOP: Credit Card</span>
+            <span>Ref #: 555666777</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Jane Smith</span>
+            <span>Event: Concert XYZ</span>
+            <span>MOP: PayPal</span>
+            <span>Ref #: 987654321</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Mark Johnson</span>
+            <span>Event: Festival ABC</span>
+            <span>MOP: Credit Card</span>
+            <span>Ref #: 555666777</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        <div class="ticket-request">
+            <span>User: Tristan Shawn</span>
+            <span>Event: Festival ABC</span>
+            <span>MOP: Credit Card</span>
+            <span>Ref #: 555666777</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+        <div class="ticket-request">
+            <span>User: Tristan Shawn</span>
+            <span>Event: Festival ABC</span>
+            <span>MOP: Credit Card</span>
+            <span>Ref #: 555666777</span>
+            <button class="approve">Approve</button>
+            <button class="deny">Deny</button>
+        </div>
+
+        
+            
+        </div>
+        
+    </div>
+
+
+
+    
+</div>
+
+    
+
+</body>
+<footer>
+    <h4>Copyright 2023</h4>
+    <a href="">Privacy Policy</a>
+    <a href="">About Us</a>
+</footer>
+</html>

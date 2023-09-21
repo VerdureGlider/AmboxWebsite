@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+
+  .home-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .home-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .profile-button {
+    background-color: #f64c72;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .news-box {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .news-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .news-content {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .buy-tickets-button {
+    background-color: #553d67;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .ticket-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .ticket-item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ticket-title {
+    font-weight: bold;
+  }
+
+  body {
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px); 
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); 
+      }
+    }
+</style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav" >
+      <img src="ambox logo.png" alt="" class="headImg">
+      <li class="head-nav"><a href="home.html">Dashboard</a></li>
+      <li class="head-nav"><a href="events.html">Events</a></li>
+      <li class="head-nav"><a href="news.html">News</a></li>
+      <li class="head-nav"><a href="about-us.html">About Us</a></li>
+      <li class="head-nav"><a href="index.html">Log In</a></li>
+  </div>
+  </header>
+
+<div class="home-container">
+  <br><br>
+  <h1 class="home-header">Welcome, John Doe</h1>
+  <button onclick="location.href = 'profile.html';"id =profile.button">Profile</button>
+  
+  <h2>Active Tickets:</h2>
+  <ul class="ticket-list">
+    <li class="ticket-item">
+      <span class="ticket-title">MCS Day 1
+      </span>
+      <span>Valid until: December 18, 2023</span>
+    </li>
+    <li class="ticket-item">
+      <span class="ticket-title">MCS Day 2</span>
+      <span>Valid until: December 19, 2023</span>
+    </li>
+  </ul>
+  
+  <button class="buy-tickets-button" onclick="location.href = 'events.html' ">Buy Tickets</button>
+
+  
+  <div class="news-box">
+    <h3 class="news-title">Current News</h3>
+    <h4>British Boy Band A1 Twenty Five to Thrill Manila Fans with October Concert at New Front Theater</h4>
+    <p class="news-content">Manila, Philippines — Brace yourselves, Manila! British-Norwegian boy band sensation, A1 Twenty Five, is all set to set the stage ablaze with their highly-anticipated concert scheduled for October 15, 2023, at the renowned New Front Theater in Manila. Fans of the iconic pop group are in for an unforgettable night of music and entertainment.
+
+A1 Twenty Five, known for their chart-topping hits and electrifying live performances, will be gracing the Philippine stage as part of their global tour. The Manila concert promises to be an evening filled with nostalgia, showcasing the band's greatest hits, along with their latest musical offerings.
+
+The New Front Theater, a premier concert venue known for its state-of-the-art facilities and outstanding acoustics, is expected to provide the perfect backdrop for A1 Twenty Five's show. Concert-goers can anticipate an immersive experience, complete with stunning visuals and a captivating atmosphere.
+
+Tickets for the concert are already generating significant buzz, with fans rushing to secure their spots for the event of the year. A1 Twenty Five's Manila concert is poised to attract fans not only from the Philippines but also from neighboring countries, making it a regional musical spectacle.
+
+"We're incredibly excited to perform in Manila and share our music with our amazing fans in the Philippines. The energy and enthusiasm of the Filipino audience are always phenomenal, and we can't wait to create unforgettable memories together," said A1 Twenty Five in a statement.
+
+A1 Twenty Five, composed of Ben Adams, Mark Read, Christian Ingebrigtsen, and Paul Marazzi, gained global fame in the late 1990s and early 2000s. Their unique blend of pop and R&B has earned them a dedicated fan base across the world.
+
+Mark your calendars and don't miss out on this epic musical journey with A1 Twenty Five at the New Front Theater in Manila on October 15, 2023. It's a concert that promises to be nothing short of sensational!</p>
+  </div>
+  
+  <div class="news-box">
+    <h3 class="news-title">Current Announcements</h3>
+    <h4>Announcement: Get Ready to Paint the Town Pink! BLACKPINK Live in Concert – Tickets Available Now!</h4>
+    <p class="news-content">Calling all BLINKs and K-pop enthusiasts! Brace yourselves for the most electrifying event of the year as the global sensation, BLACKPINK, graces the stage in Manila for a mesmerizing concert experience. Get ready to immerse yourself in the world of K-pop with a live performance that promises to leave you breathless.
+
+      BLACKPINK in Your Area: The Manila Concert
+      
+      Date: To be announced
+      Time: To be announced
+      Venue: New Front Theater, Manila
+      Be part of this historic event as BLACKPINK brings their dynamic stage presence, chart-topping hits, and fierce choreography to the heart of Manila. This is a show you won't want to miss, and we've got your tickets covered!
+      
+      Head to our ticketing website and secure your spot for this epic night. And guess what? We are thrilled to offer an exclusive discount of 20% off on all BLACKPINK concert tickets! Hurry, this offer won't last forever!
+    
+      Get ready to paint the town pink with BLACKPINK! Let's create memories and celebrate the music that unites us all. Book your tickets now and let's make this an unforgettable K-pop extravaganza! 🖤💖</p>
+  </div>
+</div>
+</body>
+
+<div class="right">
+  <div class="rtop">
+    <img src="ad1.jpg", width=200 height=300> </br>
+  </div>
+
+  <div class="rbot">
+    <img src="ad2.png", width=200 height=300> </br>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</div>
+
+<footer>
+  <h4>Copyright 2023</h4>
+  <a href="">Privacy Policy</a>
+  <a href="">About Us</a>
+</footer>
+</html>
+
+

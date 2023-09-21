@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f64c72;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            text-align: center;
+            animation: slideIn 0.5s forwards; 
+        }
+
+        .profile-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profilePicture {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #553d67;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<header>
+    <div class="nav" >
+        <img src="ambox logo.png" alt="" class="headImg">
+        <li class="head-nav"><a href="home.html">Dashboard</a></li>
+        <li class="head-nav"><a href="events.html">Events</a></li>
+        <li class="head-nav"><a href="news.html">News</a></li>
+        <li class="head-nav"><a href="about-us.html">About Us</a></li>
+        <li class="head-nav"><a href="index.html">Log In</a></li>
+    </div>
+</header>
+<body>
+    <div class="container">
+        <div class="profile-main">
+            <img src="enzo.JPG" alt="Florencio N. Pulido III" class="profilePicture">
+            <h1>Author: Florencio N. Pulido III</h1>
+            <p>Mapua Malayan Colleges Mindanao</p>
+            <p>Email: <a href="mailto:fpulido@mcm.edu.ph">fpulido@mcm.edu.ph</a></p>
+        </div>
+    </div>
+</body>
+<footer>
+    <h4>Copyright 2023</h4>
+    <a href="">Privacy Policy</a>
+    <a href="">About Us</a>
+</footer>
+</html>
